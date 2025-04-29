@@ -65,7 +65,11 @@
  * with baseline RISC-V encodings.
  */
 val encdec_capmode : ast <-> bits(32)
+
+$[optimize_control_flow_order]
 scattered mapping encdec_capmode
 
 val encdec_compressed_capmode : ast <-> bits(16)
+
+$[optimize_control_flow_order]
 scattered mapping encdec_compressed_capmode
